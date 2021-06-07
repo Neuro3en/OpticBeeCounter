@@ -1,0 +1,75 @@
+
+void setup() {
+  Serial.begin(250000);
+  pinMode(2, OUTPUT);    
+  pinMode(5, OUTPUT);    
+  pinMode(6, OUTPUT);    
+  pinMode(7, OUTPUT);    
+  digitalWrite(2, HIGH);
+}
+
+void loop() {
+  digitalWrite(5, LOW);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  Serial.print(analogRead(A0));
+  Serial.print(" ");
+  Serial.print(analogRead(A1));
+  Serial.print(" ");
+  delay(2);
+  digitalWrite(5, LOW);
+  digitalWrite(6, LOW);
+  digitalWrite(7, HIGH);
+  Serial.print(analogRead(A0));
+  Serial.print(" ");
+  Serial.print(analogRead(A1));
+  Serial.print(" ");
+  delay(2);
+  digitalWrite(5, LOW);
+  digitalWrite(6, HIGH);
+  digitalWrite(7, LOW);
+  Serial.print(analogRead(A0));
+  Serial.print(" ");
+  Serial.print(analogRead(A1));
+  Serial.print(" ");
+  delay(2);
+  digitalWrite(5, LOW);
+  digitalWrite(6, HIGH);
+  digitalWrite(7, HIGH);
+  Serial.print(analogRead(A0));
+  Serial.print(" ");
+  Serial.print(analogRead(A1));
+  Serial.print(" ");
+  delay(2);
+  digitalWrite(5, HIGH);
+  digitalWrite(6, LOW);
+  digitalWrite(7, LOW);
+  Serial.print(analogRead(A0));
+  Serial.print(" ");
+  Serial.print(analogRead(A1));
+  Serial.print(" ");
+  delay(2);
+  digitalWrite(5, HIGH);
+  digitalWrite(6, LOW);
+  digitalWrite(7, HIGH);
+  Serial.print(analogRead(A0));
+  Serial.print(" ");
+  Serial.print(analogRead(A1));
+  Serial.print(" ");
+  delay(2);  
+  digitalWrite(5, HIGH);
+  digitalWrite(6, HIGH);
+  digitalWrite(7, LOW);
+  Serial.print(analogRead(A0));
+  Serial.print(" ");
+  Serial.print(analogRead(A1));
+  Serial.print(" ");
+  delay(2);
+  digitalWrite(5, HIGH);
+  digitalWrite(6, HIGH);
+  digitalWrite(7, HIGH);
+  Serial.print(analogRead(A0));
+  Serial.print(" ");
+  Serial.println(analogRead(A1));
+  delay(2);
+}
